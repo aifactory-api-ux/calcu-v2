@@ -1,0 +1,65 @@
+# API_CONTRACT.md
+
+## Endpoints
+
+---
+
+### 1. Calculate
+
+| Method | Path             | Auth Required | Request Body Schema                                                                                                                                                                                                 | Response Schema                                                                                                                                                                                                 | Status Codes |
+|--------|------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| POST   | /api/calculate   | No           | <ul><li>operand1: number (required)</li><li>operand2: number (required)</li><li>operation: 'add' \| 'subtract' (required)</li></ul>                                                                                | <ul><li>id: number</li><li>operand1: number</li><li>operand2: number</li><li>operation: 'add' \| 'subtract'</li><li>result: number</li><li>createdAt: string (ISO 8601 timestamp)</li></ul>                      | 200          |
+
+#### Example Request Body
+
+```json
+{
+  "operand1": 5,
+  "operand2": 3,
+  "operation": "add"
+}
+```
+
+#### Example Response
+
+```json
+{
+  "id": 42,
+  "operand1": 5,
+  "operand2": 3,
+  "operation": "add",
+  "result": 8,
+  "createdAt": "2024-06-01T12:34:56.789Z"
+}
+```
+
+---
+
+### 2. Get Calculation History
+
+| Method | Path           | Auth Required | Request Body Schema | Response Schema                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Status Codes |
+|--------|----------------|--------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| GET    | /api/history   | No           | None               | Array of:<ul><li>id: number</li><li>operand1: number</li><li>operand2: number</li><li>operation: 'add' \| 'subtract'</li><li>result: number</li><li>createdAt: string (ISO 8601 timestamp)</li></ul>                                                                                                                                                                                                                                                           | 200          |
+
+#### Example Response
+
+```json
+[
+  {
+    "id": 41,
+    "operand1": 10,
+    "operand2": 2,
+    "operation": "subtract",
+    "result": 8,
+    "createdAt": "2024-06-01T12:33:00.000Z"
+  },
+  {
+    "id": 42,
+    "operand1": 5,
+    "operand2": 3,
+    "operation": "add",
+    "result": 8,
+    "createdAt": "2024-06-01T12:34:56.789Z"
+  }
+]
+```

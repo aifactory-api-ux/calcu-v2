@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1777324978451" clover="3.2.0">
+  <project timestamp="1777324978451" name="All files">
+    <metrics statements="39" coveredstatements="32" conditionals="20" coveredconditionals="13" methods="10" coveredmethods="7" elements="69" coveredelements="52" complexity="0" loc="39" ncloc="39" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="17" coveredstatements="12" conditionals="12" coveredconditionals="8" methods="7" coveredmethods="4"/>
+      <file name="Calculator.tsx" path="/workspace/b0a652fe-2367-4784-8d99-5a38e27c159e/frontend/src/components/Calculator.tsx">
+        <metrics statements="13" coveredstatements="8" conditionals="10" coveredconditionals="6" methods="6" coveredmethods="3"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+      </file>
+      <file name="OperationButton.tsx" path="/workspace/b0a652fe-2367-4784-8d99-5a38e27c159e/frontend/src/components/OperationButton.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="26" type="stmt"/>
+        <line num="13" count="26" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="22" coveredstatements="20" conditionals="8" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="useCalculator.ts" path="/workspace/b0a652fe-2367-4784-8d99-5a38e27c159e/frontend/src/hooks/useCalculator.ts">
+        <metrics statements="22" coveredstatements="20" conditionals="8" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="21" count="28" type="stmt"/>
+        <line num="22" count="28" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
+        <line num="24" count="28" type="stmt"/>
+        <line num="25" count="28" type="stmt"/>
+        <line num="26" count="28" type="stmt"/>
+        <line num="28" count="28" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="34" count="7" type="cond" truecount="3" falsecount="1"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="7" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="55" count="7" type="stmt"/>
+        <line num="59" count="28" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="63" count="28" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
